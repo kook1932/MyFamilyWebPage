@@ -3,16 +3,35 @@
 <head>
   <title>HanFamily</title>
   <meta charset="utf-8">
+  <style>
+    .js
+    {
+      font-weight: lighter;
+      color: blue;
+    }
 
+    #iidd
+    {
+      color:red;
+    }
+  </style>
   <body>
     <h1><u>HanFamily</u></h1>
+    <input type="button" value="night" onclick="
+      document.querySelector('body').style.backgroundColor='black';
+      document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="day" onclick="
+      document.querySelector('body').style.backgroundColor='white';
+      document.querySelector('body').style.color='black';
+    ">
     <ol>
       <li><a href="jy.html">JeongYong</a></li>
       <li><a href="jm.html">JangMi</a></li>
       <li><a href="gain.html">Gain</a></li>
     </ol>
     <h2>Hans</h2>
-    <p>This page is the introduction of Han family<br>
+    <p>This page is the introduction of <span class='js'>Han</span> <span id='iidd'>family</span><br>
     <img src="hans.jpg" width="30%", height="30%"></p>
   </body>
 </head>
