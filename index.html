@@ -3,6 +3,8 @@
 <head>
   <title>HanFamily</title>
   <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src = "colors.js"></script>
   <style>
     .js
     {
@@ -15,24 +17,21 @@
       color:red;
     }
   </style>
-  <body>
-    <h1><u>HanFamily</u></h1>
-    <input type="button" value="night" onclick="
-      document.querySelector('body').style.backgroundColor='black';
-      document.querySelector('body').style.color='white';
-    ">
-    <input type="button" value="day" onclick="
-      document.querySelector('body').style.backgroundColor='white';
-      document.querySelector('body').style.color='black';
-    ">
-    <ol>
-      <li><a href="jy.html">JeongYong</a></li>
-      <li><a href="jm.html">JangMi</a></li>
-      <li><a href="gain.html">Gain</a></li>
-    </ol>
-    <h2>Hans</h2>
-    <p>This page is the introduction of <span class='js'>Han</span> <span id='iidd'>family</span><br>
-    <img src="hans.jpg" width="30%", height="30%"></p>
-  </body>
 </head>
+
+<body>
+  <h1><a href = "index.html"><u>HanFamily</u></a></h1>
+  <input type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+  <ol>
+    <li><a href="jy.html">JeongYong</a></li>
+    <li><a href="jm.html">JangMi</a></li>
+    <li><a href="gain.html">Gain</a></li>
+  </ol>
+  <h2>Hans</h2>
+  <p>This page is the introduction of <span class='js'>Han</span> <span id='iidd'>family</span><br>
+  <img src="hans2.jpg" width="30%", height="30%">
+  <img src="hans.jpg" width="30%", height="30%"></p>
+</body>
 </html>
